@@ -9,6 +9,7 @@ public class Actor {
 
 	private String actorSex;
 	private Date actorBirthday;
+	
 	public String getActorId() {
 		return actorId;
 	}

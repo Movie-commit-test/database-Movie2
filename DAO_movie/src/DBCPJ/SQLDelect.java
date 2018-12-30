@@ -2,7 +2,7 @@ package DBCPJ;
 
 import java.sql.*;
 
-public class SQLSearch {
+public class SQLDelect {
 	
 
 		public ResultSet search(String sql) {

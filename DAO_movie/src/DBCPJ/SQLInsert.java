@@ -5,14 +5,14 @@ import java.sql.*;
 
 import DBCPJ.Movie;
 
-public class SQLOperation {
+public class SQLInsert {
 	
 		public void insertMovie(Movie movie) {
 			Connection connection=null;
 			PreparedStatement ps=null;
 			try {
 					connection=DbcpJdbcUtil.getConnection();
-					String sql="insert into Film(movieId,directorId,screenwriterId,zoneId,,movieName,movieLanguage,movieIntroduction,movieScore,movieAlias,movieDate) values(?,?,?,?,?,?,?,?,?,?)";
+					String sql="insert into Film(movieId,directorId,screenwriterId,zoneId,movieName,movieLanguage,movieIntroduction,movieScore,movieAlias,movieDate) values(?,?,?,?,?,?,?,?,?,?)";
 					ps=connection.prepareStatement(sql);
 					
 					ps.setString(1,movie.getMovieId());
@@ -28,6 +28,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
+					System.out.println("Insert success!");
 					
 			}catch(Exception e){
 				e.printStackTrace();
@@ -37,9 +38,11 @@ public class SQLOperation {
 		public void insertUser(User user) {
 			Connection connection=null;
 			PreparedStatement ps=null;
+			
 			try {
 					connection=DbcpJdbcUtil.getConnection();
-					String sql="insert into User(userId,userName,userSex,userPwd,userQQ,userPhone,userPictureUrl) values(?,?,?,?,?,?,?)";
+					
+					String sql="insert into [User](userId,userName,userSex,userPwd,userQQ,userPhone,userPictureUrl) values(?,?,?,?,?,?,?)";
 					ps=connection.prepareStatement(sql);
 					
 					ps.setString(1,user.getUserId());
@@ -48,10 +51,12 @@ public class SQLOperation {
 					ps.setString(4,user.getUserPwd());
 					ps.setString(5,user.getUserQQ());
 					ps.setString(6,user.getUserPhone());
-					ps.setString(7,user.getUserPictureUrl());			
+					ps.setString(7,user.getUserPictureUrl());		
+					
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
+					System.out.println("Insert success!");
 					
 			}catch(Exception e){
 				e.printStackTrace();
@@ -72,6 +77,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
+					System.out.println("Insert success!");
 					
 			}catch(Exception e){
 				e.printStackTrace();
@@ -93,7 +99,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -114,7 +120,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -133,7 +139,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -153,7 +159,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -175,7 +181,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -197,7 +203,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -218,7 +224,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -239,7 +245,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -259,7 +265,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -282,7 +288,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -303,7 +309,7 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -324,37 +330,14 @@ public class SQLOperation {
 					ps.executeUpdate();
 					connection.close();
 					ps.close();
-					
+					System.out.println("Insert success!");
 			}catch(Exception e){
 				e.printStackTrace();
 			}
 		}
 		
 
-		public ResultSet search(String sql) {
-			Connection conn=null;
-			Statement stmt=null;
-			try {
-				conn=DbcpJdbcUtil.getConnection();
-				stmt = conn.createStatement();
-				ResultSet rs=stmt.executeQuery(sql);
-				ResultSetMetaData rsmd=rs.getMetaData();
-				int columns=rsmd.getColumnCount();
-				while(rs.next())
-				{
-					for(int i=1;i<=columns;i++) {
-						System.out.print(rs.getString(i)+" ");
-					}
-					System.out.println();
-				}
-
-				DbcpJdbcUtil.release(conn, stmt,rs);
-				return rs;
-			}catch(Exception e) {
-				e.printStackTrace();
-			}
-			return null;
-		}
+		
 		public boolean delectdata(String sql) {
 			Connection conn=null;
 			Statement stmt=null;

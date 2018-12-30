@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="C:/Users/admin/Desktop/jar/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/admin/Desktop/jar/commons-pool2-2.4.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/admin/Desktop/jar/mchange-commons-java-0.2.10.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
