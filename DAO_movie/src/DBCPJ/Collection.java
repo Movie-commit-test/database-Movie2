@@ -4,7 +4,13 @@ public class Collection {
 
 	private String userId;
 	private String movieId;
-
+	public Collection() {
+	}
+	
+	public Collection(String uId,String mid) {
+		this.userId=uId;
+		this.movieId=mid;
+	}
 	public String getMovieId() {
 		return movieId;
 	}

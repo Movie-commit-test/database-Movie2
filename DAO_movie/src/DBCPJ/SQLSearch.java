@@ -36,7 +36,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Actor";
+				String sql="select * from Actor";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -62,7 +62,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Play";
+				String sql="select * from Play";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -87,7 +87,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Screenwriter";
+				String sql="select * from Screenwriter";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -112,7 +112,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Zone";
+				String sql="select * from Zone";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -137,7 +137,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Film";
+				String sql="select * from Film";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -162,7 +162,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Type";
+				String sql="select * from Type";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -187,7 +187,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Film_Type";
+				String sql="select * from Film_Type";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -212,7 +212,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Comment";
+				String sql="select * from Comment";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -237,7 +237,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Collection";
+				String sql="select * from Collection";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -262,7 +262,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Director";
+				String sql="select * from Director";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -287,7 +287,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Release";
+				String sql="select * from Release";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -312,7 +312,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Advertise";
+				String sql="select * from Advertise";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -337,7 +337,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form User";
+				String sql="select * from [User]";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -362,7 +362,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Purchase";
+				String sql="select * from Purchase";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -387,7 +387,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form Cinema";
+				String sql="select * from Cinema";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -413,7 +413,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select * form "+table;
+				String sql="select * from "+table;
 
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
@@ -440,7 +440,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Actor";
+				String sql="select "+element+" from Actor";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -466,7 +466,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Play";
+				String sql="select "+element+" from Play";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -492,7 +492,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Zone";
+				String sql="select "+element+" from Zone";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -517,7 +517,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Screenwriter";
+				String sql="select "+element+" from Screenwriter";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -543,7 +543,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Type";
+				String sql="select "+element+" from Type";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -568,7 +568,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Film_Type";
+				String sql="select "+element+" from Film_Type";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -593,7 +593,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Film where";
+				String sql="select "+element+" from Film";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -619,7 +619,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Director";
+				String sql="select "+element+" from Director";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -644,7 +644,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Comment";
+				String sql="select "+element+" from Comment";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -669,7 +669,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Collection";
+				String sql="select "+element+" from Collection";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -694,7 +694,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Release";
+				String sql="select "+element+" from Release";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -719,7 +719,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Advertise";
+				String sql="select "+element+" from Advertise";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -744,7 +744,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form User";
+				String sql="select "+element+" from [User]";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();
@@ -769,7 +769,7 @@ public class SQLSearch {
 			try {
 				conn=DbcpJdbcUtil.getConnection();
 				stmt = conn.createStatement();
-				String sql="select "+element+" form Cinema";
+				String sql="select "+element+" from Cinema";
 				ResultSet rs=stmt.executeQuery(sql);
 				ResultSetMetaData rsmd=rs.getMetaData();
 				int columns=rsmd.getColumnCount();

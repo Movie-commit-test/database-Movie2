@@ -6,6 +6,12 @@ public class Advertise {
 	private String adContent;
 	private String adProduct;
 	private String adType;
+	public Advertise() {
+	}
+	
+	public Advertise(String adId) {
+		this.adId=adId;
+	}
 	public String getAdId() {
 		return adId;
 	}

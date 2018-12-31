@@ -255,7 +255,7 @@ public class SQLInsert {
 			PreparedStatement ps=null;
 			try {
 					connection=DbcpJdbcUtil.getConnection();
-					String sql="insert into Release(movieId,userId) values(?,?)";
+					String sql="insert into Collection(movieId,userId) values(?,?)";
 					ps=connection.prepareStatement(sql);
 					
 					

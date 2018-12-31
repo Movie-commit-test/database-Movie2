@@ -10,6 +10,14 @@ public class Actor {
 	private String actorSex;
 	private Date actorBirthday;
 	
+	public Actor() {
+	}
+	
+	public Actor(String actorId,String actorname) {
+		this.actorId=actorId;
+		this.actorname=actorname;
+	}
+
 	public String getActorId() {
 		return actorId;
 	}

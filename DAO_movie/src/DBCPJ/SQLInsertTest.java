@@ -17,7 +17,7 @@ class SQLInsertTest {
 	@Test
 	void testInsertMovie() {
 		Movie movie=new Movie();
-		movie.setMovieId("1");
+		movie.setMovieId("2");
 		movie.setMovieAlias("马裤");
 		movie.setMovieName("营救计划");
 		movie.setMovieIntroduction("一个关于在马上如何救援的故事!");
@@ -26,8 +26,8 @@ class SQLInsertTest {
 
 		movie.setMovieScore((float)3);
 		
-		movie.setScreenwriterId("1");
-		movie.setDirectorId("1");
+		movie.setScreenwriterId("2");
+		movie.setDirectorId("2");
 		Calendar c1=Calendar.getInstance();
 		c1.set(2000,12,25);
 		Date date=c1.getTime();	
@@ -40,7 +40,7 @@ class SQLInsertTest {
 	@Test
 	void testInsertUser() {
 		User user=new User();
-		user.setUserId("3");
+		user.setUserId("2");
 		user.setUserName("RRR1");
 		user.setUserPhone("123456789");
 		user.setUserPictureUrl("www.baidu.com");
@@ -72,7 +72,7 @@ class SQLInsertTest {
 	@Test
 	void testInsertScreenwriter() {
 		Screenwriter obj=new Screenwriter();
-		obj.setScreenwriterId("1");
+		obj.setScreenwriterId("2");
 		
 		obj.setScreenwritername("Mary");
 		obj.setScreenwriterSex("女");
@@ -89,7 +89,7 @@ class SQLInsertTest {
 	@Test
 	void testInsertDirector() {
 		Director director=new Director();
-		director.setDirectorId("1");;
+		director.setDirectorId("2");;
 		
 		director.setDirectorname("Alase");
 		director.setDirectorSex("男");
@@ -106,7 +106,7 @@ class SQLInsertTest {
 	@Test
 	void testInsertZone() {
 		Zone zone=new Zone();
-		zone.setZoneId("1");
+		zone.setZoneId("2");
 		zone.setZoneName("English");	
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertZone(zone);
@@ -115,7 +115,7 @@ class SQLInsertTest {
 	@Test
 	void testInsertType() {
 		Type type=new Type();
-		type.setTypeId("1");
+		type.setTypeId("2");
 		type.setTypeName("科幻");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertType(type);
@@ -125,7 +125,7 @@ class SQLInsertTest {
 	void testInsertAdvertise() {
 		Advertise obj=new Advertise();
 		obj.setAdContent("CoCo a good fruiter");
-		obj.setAdId("1");
+		obj.setAdId("2");
 		obj.setAdProduct("OUTLET");
 		obj.setAdType("护肤品");
 		SQLInsert sqlInsert=new SQLInsert();
@@ -136,7 +136,7 @@ class SQLInsertTest {
 	void testInsertCinema() {
 		Cinema cinema=new Cinema();
 		cinema.setCinemaAddress("北京市万达影院");
-		cinema.setCinemaId("1");
+		cinema.setCinemaId("2");
 		cinema.setCinemaName("万达影院");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertCinema(cinema);
@@ -145,9 +145,9 @@ class SQLInsertTest {
 	@Test
 	void testInsertPurchase() {
 		Purchase purchase=new Purchase();
-		purchase.setCinemaId("1");
-		purchase.setMovieId("1");
-		purchase.setUserId("1");
+		purchase.setCinemaId("2");
+		purchase.setMovieId("2");
+		purchase.setUserId("2");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertPurchase(purchase);
 	}
@@ -155,8 +155,8 @@ class SQLInsertTest {
 	@Test
 	void testInsertRelease() {
 		Release release=new Release();
-		release.setCinemaId("1");
-		release.setMovieId("1");
+		release.setCinemaId("2");
+		release.setMovieId("2");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertRelease(release);
 	}
@@ -164,8 +164,8 @@ class SQLInsertTest {
 	@Test
 	void testInsertCollection() {
 		Collection collection=new Collection();
-		collection.setMovieId("1");
-		collection.setUserId("1");
+		collection.setMovieId("2");
+		collection.setUserId("2");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertCollection(collection);
 	}
@@ -174,9 +174,9 @@ class SQLInsertTest {
 	void testInsertComment() {
 		Comment comment=new Comment();
 		comment.setContent("This is not a good movie!Actor too bad!");
-		comment.setMovieId("1");
+		comment.setMovieId("2");
 		comment.setScore((float)3);
-		comment.setUserId("1");
+		comment.setUserId("2");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertComment(comment);
 	}
@@ -184,8 +184,8 @@ class SQLInsertTest {
 	@Test
 	void testInsertFilm_Type() {
 		Film_Type obj=new Film_Type();
-		obj.setMovieId("1");
-		obj.setTypeId("1");
+		obj.setMovieId("2");
+		obj.setTypeId("2");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertFilm_Type(obj);
 	}
@@ -193,8 +193,8 @@ class SQLInsertTest {
 	@Test
 	void testInsertPlay() {
 		Play play=new Play();
-		play.setActorId("1");
-		play.setMovieId("1");
+		play.setActorId("2");
+		play.setMovieId("2");
 		SQLInsert sqlInsert=new SQLInsert();
 		sqlInsert.insertPlay(play);
 	}
