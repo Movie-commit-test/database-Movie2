@@ -25,10 +25,15 @@ public class SQLInsert {
 					ps.setFloat(8,movie.getMovieScore());
 					ps.setString(9, movie.getMovieAlias());
 					ps.setDate(10,new Date(movie.getMovieDate().getTime()));			
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 					
 			}catch(Exception e){
 				e.printStackTrace();
@@ -53,10 +58,15 @@ public class SQLInsert {
 					ps.setString(6,user.getUserPhone());
 					ps.setString(7,user.getUserPictureUrl());		
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 					
 			}catch(Exception e){
 				e.printStackTrace();
@@ -74,10 +84,15 @@ public class SQLInsert {
 					ps.setString(2,actor.getActorname());
 					ps.setString(3,actor.getActorSex());
 					ps.setDate(4,new Date(actor.getActorBirthday().getTime()));
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 					
 			}catch(Exception e){
 				e.printStackTrace();
@@ -96,10 +111,16 @@ public class SQLInsert {
 					ps.setString(2,obj.getScreenwritername());
 					ps.setString(3,obj.getScreenwriterSex());
 					ps.setDate(4,new Date(obj.getScreenwriterBirthday().getTime()));
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
+					
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -117,10 +138,15 @@ public class SQLInsert {
 					ps.setString(2,obj.getDirectorname());
 					ps.setString(3,obj.getDirectorSex());
 					ps.setDate(4,new Date(obj.getDirectorBirthday().getTime()));
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -136,10 +162,15 @@ public class SQLInsert {
 					ps.setString(1,obj.getZoneId());
 					ps.setString(2,obj.getZoneName());
 		
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -156,10 +187,15 @@ public class SQLInsert {
 					ps.setString(1,obj.getTypeId());
 					ps.setString(2,obj.getTypeName());
 		
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -178,10 +214,15 @@ public class SQLInsert {
 					ps.setString(3,obj.getAdProduct());
 					ps.setString(4,obj.getAdType());
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -200,10 +241,15 @@ public class SQLInsert {
 					ps.setString(3,obj.getCinemaAddress());
 
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -221,10 +267,15 @@ public class SQLInsert {
 					ps.setString(3,obj.getUserId());
 
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -242,10 +293,15 @@ public class SQLInsert {
 					ps.setString(2,obj.getMovieId());
 
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -262,10 +318,15 @@ public class SQLInsert {
 					ps.setString(1,obj.getMovieId());
 					ps.setString(2,obj.getUserId());
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -285,10 +346,15 @@ public class SQLInsert {
 					ps.setString(3,obj.getContent());
 					ps.setFloat(4,obj.getScore());
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -306,10 +372,15 @@ public class SQLInsert {
 					ps.setString(1,obj.getTypeId());
 					ps.setString(2,obj.getMovieId());
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
@@ -327,61 +398,20 @@ public class SQLInsert {
 					ps.setString(1,obj.getActorId());
 					ps.setString(2,obj.getMovieId());
 					
-					ps.executeUpdate();
+					int rs=ps.executeUpdate();
 					connection.close();
 					ps.close();
-					System.out.println("Insert success!");
+					if(rs==0) {
+						System.out.println("Insert fault!");
+					}
+					else {
+						System.out.println("Insert success!");
+					}
 			}catch(Exception e){
 				e.printStackTrace();
 			}
 		}
 		
 
-		
-		public boolean delectdata(String sql) {
-			Connection conn=null;
-			Statement stmt=null;
-			try {
-					conn=DbcpJdbcUtil.getConnection();
-					stmt = conn.createStatement();
-					int rs=stmt.executeUpdate(sql);
-					
-					conn.close();
-					stmt.close();
-					if(rs==0) {
-						return false;
-					}
-					else {
-						return true;
-					}
-			}catch(Exception e) {
-				e.printStackTrace();
-			}
-			return false;
-		}
-
-		
-		public boolean update(String sql) {
-			Connection conn=null;
-			Statement stmt=null;
-			
-			try {
-					conn=DbcpJdbcUtil.getConnection();
-					stmt = conn.createStatement();
-					int rs=stmt.executeUpdate(sql);
-					
-					conn.close();
-					stmt.close();
-					if(rs==0) {
-						return false;
-					}
-					else {
-						return true;
-					}
-			}catch(Exception e) {
-				e.printStackTrace();
-			}
-			return false;
-		}
 		
 }

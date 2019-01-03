@@ -16,6 +16,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertMovie() {
+		System.out.println("testInsertMovie:");
 		Movie movie=new Movie();
 		movie.setMovieId("2");
 		movie.setMovieAlias("马裤");
@@ -39,6 +40,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertUser() {
+		System.out.println("testInsertUser:");
 		User user=new User();
 		user.setUserId("2");
 		user.setUserName("RRR1");
@@ -54,6 +56,8 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertActor() {
+
+		System.out.println("testInsertActor:");
 		Actor actor=new Actor();
 		actor.setActorId("2");
 		
@@ -71,6 +75,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertScreenwriter() {
+		System.out.println("testInsertScreenwriter:");
 		Screenwriter obj=new Screenwriter();
 		obj.setScreenwriterId("2");
 		
@@ -88,6 +93,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertDirector() {
+		System.out.println("testInsertDirector:");
 		Director director=new Director();
 		director.setDirectorId("2");;
 		
@@ -105,6 +111,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertZone() {
+		System.out.println("testInsertZone:");
 		Zone zone=new Zone();
 		zone.setZoneId("2");
 		zone.setZoneName("English");	
@@ -114,6 +121,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertType() {
+		System.out.println("testInsertType:");
 		Type type=new Type();
 		type.setTypeId("2");
 		type.setTypeName("科幻");
@@ -123,6 +131,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertAdvertise() {
+		System.out.println("testInsertAdvertise:");
 		Advertise obj=new Advertise();
 		obj.setAdContent("CoCo a good fruiter");
 		obj.setAdId("2");
@@ -134,6 +143,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertCinema() {
+		System.out.println("testInsertCinema:");
 		Cinema cinema=new Cinema();
 		cinema.setCinemaAddress("北京市万达影院");
 		cinema.setCinemaId("2");
@@ -144,6 +154,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertPurchase() {
+		System.out.println("testInsertPurchase:");
 		Purchase purchase=new Purchase();
 		purchase.setCinemaId("2");
 		purchase.setMovieId("2");
@@ -154,6 +165,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertRelease() {
+		System.out.println("testInsertRelease:");
 		Release release=new Release();
 		release.setCinemaId("2");
 		release.setMovieId("2");
@@ -163,6 +175,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertCollection() {
+		System.out.println("testInsertCollection:");
 		Collection collection=new Collection();
 		collection.setMovieId("2");
 		collection.setUserId("2");
@@ -172,6 +185,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertComment() {
+		System.out.println("testInsertComment:");
 		Comment comment=new Comment();
 		comment.setContent("This is not a good movie!Actor too bad!");
 		comment.setMovieId("2");
@@ -183,6 +197,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertFilm_Type() {
+		System.out.println("testInsertFilm_Type:");
 		Film_Type obj=new Film_Type();
 		obj.setMovieId("2");
 		obj.setTypeId("2");
@@ -192,6 +207,7 @@ class SQLInsertTest {
 
 	@Test
 	void testInsertPlay() {
+		System.out.println("testInsertPlay:");
 		Play play=new Play();
 		play.setActorId("2");
 		play.setMovieId("2");

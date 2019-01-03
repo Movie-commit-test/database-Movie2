@@ -5,30 +5,7 @@ import java.sql.*;
 public class SQLSearch {
 	
 
-		public ResultSet search(String sql) {
-			Connection conn=null;
-			Statement stmt=null;
-			try {
-				conn=DbcpJdbcUtil.getConnection();
-				stmt = conn.createStatement();
-				ResultSet rs=stmt.executeQuery(sql);
-				ResultSetMetaData rsmd=rs.getMetaData();
-				int columns=rsmd.getColumnCount();
-				while(rs.next())
-				{
-					for(int i=1;i<=columns;i++) {
-						System.out.print(rs.getString(i)+" ");
-					}
-					System.out.println();
-				}
-
-				DbcpJdbcUtil.release(conn, stmt,rs);
-				return rs;
-			}catch(Exception e) {
-				e.printStackTrace();
-			}
-			return null;
-		}
+		
 		
 		public ResultSet SearchActor_ALL() {
 			Connection conn=null;
@@ -789,27 +766,29 @@ public class SQLSearch {
 			return null;
 		}
 		
-		public boolean update(String sql) {
+		public ResultSet search(String sql) {
 			Connection conn=null;
 			Statement stmt=null;
-			
 			try {
-					conn=DbcpJdbcUtil.getConnection();
-					stmt = conn.createStatement();
-					int rs=stmt.executeUpdate(sql);
-					
-					conn.close();
-					stmt.close();
-					if(rs==0) {
-						return false;
+				conn=DbcpJdbcUtil.getConnection();
+				stmt = conn.createStatement();
+				ResultSet rs=stmt.executeQuery(sql);
+				ResultSetMetaData rsmd=rs.getMetaData();
+				int columns=rsmd.getColumnCount();
+				while(rs.next())
+				{
+					for(int i=1;i<=columns;i++) {
+						System.out.print(rs.getString(i)+" ");
 					}
-					else {
-						return true;
-					}
+					System.out.println();
+				}
+
+				DbcpJdbcUtil.release(conn, stmt,rs);
+				return rs;
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
-			return false;
+			return null;
 		}
 		
 }
