@@ -73,4 +73,6 @@ class SQLUpdateTest {
 		SQLUpdate a=new SQLUpdate();
 		a.UpdateZone_Name("2", "test");
 	}
+	
+	
 }

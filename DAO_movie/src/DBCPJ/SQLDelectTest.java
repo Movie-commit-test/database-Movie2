@@ -36,14 +36,14 @@ class SQLDelectTest {
 	void testDeleteCollection() {
 		System.out.println("testDeleteCollection:");
 		SQLDelect a=new SQLDelect();
-		a.DeleteCollection("2", "1");
+		a.DeleteCollection("2", "2");
 	}
 
 	@Test
 	void testDeleteComment() {
 		System.out.println("testDeleteComment:");
 		SQLDelect a=new SQLDelect();
-		a.DeleteComment("2", "5");
+		a.DeleteComment("2", "2");
 	}
 
 	@Test
@@ -57,7 +57,7 @@ class SQLDelectTest {
 	void testDeleteFilm_Type() {
 		System.out.println("testDeleteFilm_Type:");
 		SQLDelect a=new SQLDelect();
-		a.DeleteFilm_Type("2", "1");
+		a.DeleteFilm_Type("2", "2");
 	}
 
 	@Test
@@ -71,7 +71,7 @@ class SQLDelectTest {
 	void testDeletePlay() {
 		System.out.println("testDeletePlay:");
 		SQLDelect a=new SQLDelect();
-		a.DeletePlay("2","1");
+		a.DeletePlay("2","2");
 	}
 
 	@Test
